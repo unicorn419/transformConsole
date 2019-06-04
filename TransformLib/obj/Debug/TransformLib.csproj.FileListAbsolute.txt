@@ -1,0 +1,5 @@
+C:\Users\unico\source\repos\transformConsole\TransformLib\bin\Debug\TransformLib.dll
+C:\Users\unico\source\repos\transformConsole\TransformLib\bin\Debug\TransformLib.pdb
+C:\Users\unico\source\repos\transformConsole\TransformLib\obj\Debug\TransformLib.csproj.CoreCompileInputs.cache
+C:\Users\unico\source\repos\transformConsole\TransformLib\obj\Debug\TransformLib.dll
+C:\Users\unico\source\repos\transformConsole\TransformLib\obj\Debug\TransformLib.pdb

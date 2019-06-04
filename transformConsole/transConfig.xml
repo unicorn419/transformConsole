@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<formats>
+  <format type="Format1" ParseClass="ParseFormat1.Parse1" ClassPath="ParseFormat1.dll">
+    <field sourceName="Identifier" destName="AccountCode" index="0" isNeedProcess="true" ></field>
+    <field sourceName="Name" destName="Name" index="1" isNeedProcess="false" ></field>
+    <field sourceName="Type" destName="Type" index="2" isNeedProcess="true" ></field>
+    <field sourceName="Opened" destName="Open_Date" index ="3" isNeedProcess="true" default="" ></field>
+    <field sourceName="Currency" destName="Currency" index ="4" isNeedProcess="true" ></field>
+  </format>
+  <format type="Format2" ParseClass="ParseFormat2.Parse2" ClassPath="ParseFormat2.dll">
+    <field sourceName="Name" destName="Name" index="0" isNeedProcess="false" ></field>
+    <field sourceName="Type" destName="Type" index="1" isNeedProcess="false" ></field>
+    <field sourceName="Currency" destName="Currency" index="2" isNeedProcess="true" ></field>
+    <field sourceName="Custodian Code" destName="AccountCode" index="3" isNeedProcess="true" ></field>
+  
+  </format>
+</formats>

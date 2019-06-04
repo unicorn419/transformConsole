@@ -1,0 +1,11 @@
+C:\Users\unico\source\repos\transformConsole\transformConsole\obj\Debug\transformConsole.csproj.CoreCompileInputs.cache
+C:\Users\unico\source\repos\transformConsole\transformConsole\bin\Debug\transformConsole.exe.config
+C:\Users\unico\source\repos\transformConsole\transformConsole\bin\Debug\transformConsole.exe
+C:\Users\unico\source\repos\transformConsole\transformConsole\bin\Debug\transformConsole.pdb
+C:\Users\unico\source\repos\transformConsole\transformConsole\obj\Debug\transformConsole.exe
+C:\Users\unico\source\repos\transformConsole\transformConsole\obj\Debug\transformConsole.pdb
+C:\Users\unico\source\repos\transformConsole\transformConsole\bin\Debug\TransformLib.dll
+C:\Users\unico\source\repos\transformConsole\transformConsole\bin\Debug\TransformLib.pdb
+C:\Users\unico\source\repos\transformConsole\transformConsole\obj\Debug\transformConsole.csprojAssemblyReference.cache
+C:\Users\unico\source\repos\transformConsole\transformConsole\obj\Debug\transformConsole.csproj.CopyComplete
+C:\Users\unico\source\repos\transformConsole\transformConsole\bin\Debug\transConfig.xml

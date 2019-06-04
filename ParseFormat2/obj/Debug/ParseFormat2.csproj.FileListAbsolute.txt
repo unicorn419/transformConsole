@@ -1,0 +1,9 @@
+C:\Users\unico\source\repos\transformConsole\ParseFormat2\bin\Debug\ParseFormat2.dll
+C:\Users\unico\source\repos\transformConsole\ParseFormat2\bin\Debug\ParseFormat2.pdb
+C:\Users\unico\source\repos\transformConsole\ParseFormat2\bin\Debug\TransformLib.dll
+C:\Users\unico\source\repos\transformConsole\ParseFormat2\bin\Debug\TransformLib.pdb
+C:\Users\unico\source\repos\transformConsole\ParseFormat2\obj\Debug\ParseFormat2.csprojAssemblyReference.cache
+C:\Users\unico\source\repos\transformConsole\ParseFormat2\obj\Debug\ParseFormat2.csproj.CoreCompileInputs.cache
+C:\Users\unico\source\repos\transformConsole\ParseFormat2\obj\Debug\ParseFormat2.csproj.CopyComplete
+C:\Users\unico\source\repos\transformConsole\ParseFormat2\obj\Debug\ParseFormat2.dll
+C:\Users\unico\source\repos\transformConsole\ParseFormat2\obj\Debug\ParseFormat2.pdb

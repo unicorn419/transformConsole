@@ -5,11 +5,12 @@
 2. basic item process if there didn't need Transform，just set the sourceName and destName，you do not need write code.
 
 
-Todo:
+Todo and some issue:
 
-if want to promot the performance, the config.xml can save to the memory.
-if want to know the progress rate， we can add some event to notify the caller when Transform the data.
-if the caller did not start a new thread to call those method, it will blocked
+if want to promot the performance, the transConfig.xml can load to the memory.
+if want to know the progress rate， it can add some event to notify the caller when Transforming the data.
+if the caller did not start a new thread to call those method, it may be blocked
+if the csv file is big, it need change the solution to reader mode,not load to list mode 
 
 
 

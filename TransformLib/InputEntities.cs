@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Data;
+using System.IO;
 
 namespace TransformLib
 {
@@ -13,12 +14,21 @@ namespace TransformLib
         public List<List<string >> Data = new List<List<string>>();
         public string Format;
 
-        public static InputEntities ReadCSV(string csvFilePath)
+        public static IEnumerable<string[]> ReadCSV(string csvFilePath,bool isHaveHead)
         {
-            ///todo init the Colums list,if not exist the column ，read from transConfig.xml sourceName field ASC
-            ///todo fill the data List,each row is one list<string>
-            ///todo init the format type
-            ///
+            var lines = File.ReadAllLines(csvFilePath).Select(x => x.Split(','));
+
+             CSV = lines.Skip(1)
+           .SelectMany(x => x)
+           .Select((v, i) => new { Value = v, Index = i % lineLength })
+           .Where(x => x.Index == 1)
+           .Select(x => x.Value);
+
+            foreach (var data in CSV)
+            {
+                Console.WriteLine(data);
+            }
+
 
             return new InputEntities();
         }

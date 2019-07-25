@@ -41,13 +41,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="InputEntities.cs" />
-    <Compile Include="OutputEntities.cs" />
     <Compile Include="OutputEntity.cs" />
     <Compile Include="parseFormatBasic.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="StandParse.cs" />
     <Compile Include="TransformFactory.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="transConfig.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

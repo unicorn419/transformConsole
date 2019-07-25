@@ -17,7 +17,7 @@ namespace ParseFormat1
 
             switch (columName)
             {
-                case "Identifier":
+                case "AccountCode":
                     string[] tmp = val.Split('|');
                     if (tmp.Length == 2)
                     {
@@ -44,9 +44,9 @@ namespace ParseFormat1
                     if (val == "4")
                         return "Fund";
                     return val;
-                case "Opened":
+                case "Open_Date":
                     DateTime dt = DateTime.Parse(val);
-                    return dt.ToString("yyyy-mm-dd");
+                    return dt.ToString("yyyy-MM-dd");
                 default:
                     return val;
 

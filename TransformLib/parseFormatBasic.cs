@@ -7,27 +7,24 @@ namespace TransformLib
 {
     public abstract class ParseFormatBasic
     {
-        public  OutputEntities  Convert(InputEntities ie)
+        public  List<OutputEntity>  Convert(string format, IEnumerable<string[]> ie)
         {
-            OutputEntities oes = new OutputEntities();
-            Type type = Type.GetType("OutputEntity");
-
-            foreach (List<string> row in ie.Data)
+            List<OutputEntity> oes = new List<OutputEntity>() ;
+          
+            foreach (string[] row in ie)
             {
                 OutputEntity oe = new OutputEntity();
-                int i = 0;
-                foreach (string colName in ie.Colums)
+                Type type = oe.GetType();
+                for (int i=0; i < row.Length;i++)
                 {
                     string val = row[i];
                     string destName;
-                    int index;
                     bool isneedProcess;
-                    TransformFactory.getFieldProcessInfo(ie.Format, colName, out destName, out index, out isneedProcess);
+                    TransformFactory.getFieldProcessInfo(format, i, out destName, out isneedProcess);
                     if (isneedProcess)
-                        val = Handle(colName, row[i]);
-                    type.GetField(destName).SetValue(oe, val);
-
-                    index++;
+                        val = Handle(destName, row[i]);
+                    
+                    type.GetProperty(destName).SetValue(oe,val);
 
                 }
                 oes.Add(oe);

@@ -4,9 +4,8 @@ using System.Text;
 
 namespace TransformLib
 {
-    public class OutputEntities
+    public class OutputEntities:IEnumerable<OutputEntity>
     {
-        List<OutputEntity> _list = new List<OutputEntity>(); 
         public void ToCSV(string filePath)
         {
         }

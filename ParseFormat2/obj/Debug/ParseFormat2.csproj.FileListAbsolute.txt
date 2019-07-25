@@ -1,3 +1,4 @@
+C:\Users\unico\source\repos\transformConsole\ParseFormat2\bin\Debug\transConfig.xml
 C:\Users\unico\source\repos\transformConsole\ParseFormat2\bin\Debug\ParseFormat2.dll
 C:\Users\unico\source\repos\transformConsole\ParseFormat2\bin\Debug\ParseFormat2.pdb
 C:\Users\unico\source\repos\transformConsole\ParseFormat2\bin\Debug\TransformLib.dll

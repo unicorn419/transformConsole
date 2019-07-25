@@ -55,13 +55,24 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\ParseFormat1\ParseFormat1.csproj">
+      <Project>{c026a91b-47f1-4b02-9562-00025386d2e3}</Project>
+      <Name>ParseFormat1</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ParseFormat2\ParseFormat2.csproj">
+      <Project>{3b1be4a9-f7a8-4839-9501-615d23df2689}</Project>
+      <Name>ParseFormat2</Name>
+    </ProjectReference>
     <ProjectReference Include="..\TransformLib\TransformLib.csproj">
       <Project>{05b4473a-b964-42d4-b9ca-cabf3aea5f21}</Project>
       <Name>TransformLib</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <None Include="transConfig.xml">
+    <None Include="File1.csv">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="File2.csv">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
   </ItemGroup>

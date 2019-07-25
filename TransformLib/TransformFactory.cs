@@ -70,7 +70,7 @@ namespace TransformLib
             className = string.Empty;
         }
 
-        public static void getFieldProcessInfo(string formatName, string columName, out string destColumName, out int index, out bool isNeedProcess)
+        public static void getFieldProcessInfo(string formatName, int index, out string destColumName, out bool isNeedProcess)
         {
             XmlDocument doc = new XmlDocument();
             doc.Load("transConfig.xml");    // load config xml  
@@ -84,11 +84,10 @@ namespace TransformLib
                     XmlNodeList fields = ((XmlElement)node).GetElementsByTagName("field");
                     foreach (XmlNode fieldNode in fields)
                     {
-                        if (((XmlElement)fieldNode).GetAttribute("sourceName") == columName)
+                        if (int.Parse(((XmlElement)fieldNode).GetAttribute("index")) == index)
                         {
-                            destColumName = ((XmlElement)fieldNode).GetAttribute("sourceName");
+                            destColumName = ((XmlElement)fieldNode).GetAttribute("destName");
                             isNeedProcess = Boolean.Parse(((XmlElement)fieldNode).GetAttribute("isNeedProcess"));
-                            index = int.Parse(((XmlElement)fieldNode).GetAttribute("index"));
                             return;
                         }
                     }
@@ -97,10 +96,8 @@ namespace TransformLib
                 }
 
             }
-            destColumName = columName;
+            destColumName = "";
             isNeedProcess = false;
-            index = 0;
-
         }
 
 
